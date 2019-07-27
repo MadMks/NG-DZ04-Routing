@@ -1,0 +1,11 @@
+.active{
+  background-color: #cccccc;
+}
+ul{
+  display: flex;
+  list-style-type: none;
+}
+li{
+  padding: 5px 10px;
+  background-color: #ececec;
+}
