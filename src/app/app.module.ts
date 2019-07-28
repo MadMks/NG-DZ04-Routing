@@ -6,26 +6,23 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProductComponent } from './components/product/product.component';
-import {RouterModule} from '@angular/router';
+import {FormsModule} from '@angular/forms';
+import { ChildComponent } from './components/child/child.component';
 
-const routes = [
-  { path: '', component: ProfileComponent},
-  { path: 'about', component: AboutComponent},
-  { path: 'product', component: ProductComponent},
-  { path: '**', component: ProductComponent}
-];
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     AboutComponent,
-    ProductComponent
+    ProductComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes)
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
